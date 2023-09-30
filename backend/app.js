@@ -1,4 +1,6 @@
 require('./models/User');
+require('./config/passport'); // <-- ADD THIS LINE
+const passport = require('passport');
 const debug = require('debug');
 const express = require("express");
 const cookieParser = require('cookie-parser');
@@ -14,6 +16,7 @@ const csrfRouter = require('./routes/api/csrf');
 
 const app = express();
 
+app.use(passport.initialize());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
