@@ -1,3 +1,4 @@
+require('./models/User');
 const debug = require('debug');
 const express = require("express");
 const cookieParser = require('cookie-parser');
