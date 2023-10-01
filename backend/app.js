@@ -1,6 +1,6 @@
 require('./models/User');
 require('./models/Tweet');
-require('./config/passport'); // <-- ADD THIS LINE
+require('./config/passport');
 const passport = require('passport');
 const debug = require('debug');
 const express = require("express");
