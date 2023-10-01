@@ -1,11 +1,9 @@
 {
   "name": "mern-twitter",
   "version": "1.0.0",
-  "description": "A Twitter clone built with the MERN stack",
-  "engines": {
-    "node": "16.x"
-  },
-  "scripts": {
+  "description": "",
+  "main": "index.js",
+"scripts": {
     "backend-install": "npm install --prefix backend",
     "backend": "npm run dev --prefix backend",
     "frontend-install": "npm install --prefix frontend",
@@ -14,6 +12,9 @@
     "build": "npm run backend-install && npm run frontend-install && npm run frontend-build"
   },
   "keywords": [],
-  "author": "App Academy",
-  "license": "ISC"
+  "author": "Avery Berry",
+  "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  }
 }
