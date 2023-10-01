@@ -1,5 +1,3 @@
-// src/App.js
-
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Switch } from 'react-router-dom';
