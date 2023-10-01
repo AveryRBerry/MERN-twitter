@@ -9,8 +9,7 @@ const logger = require('morgan');
 
 const cors = require('cors');
 const csurf = require('csurf');
-// const { isProduction } = require('./config/keys');
-const isProduction = true;
+const { isProduction } = require('./config/keys');
 
 const usersRouter = require('./routes/api/users');
 const tweetsRouter = require('./routes/api/tweets');
@@ -75,7 +74,7 @@ if (isProduction) {
 
 
 const serverErrorLogger = debug('backend:error');
-
+//make sure all endpoints are defined b4 this code or else they will 404
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   err.statusCode = 404;
